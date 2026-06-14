@@ -5,4 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name : using of variables in githib actions
-        run: echo "My name is "
+        run: echo "My name is ${{vars.name}} "
+  
+      - name: using of the secrets in github actions
+        run: echo "My API Key is ${{secrets.API_Key}}"
+        
