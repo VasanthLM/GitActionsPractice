@@ -2,7 +2,8 @@ name: Sample Demo
 on: workflow_dispatch
 jobs:
   Trial_One:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
+    
     steps:
       - name: Printing Success message
       run: echo "Successfully run first github Actions"
