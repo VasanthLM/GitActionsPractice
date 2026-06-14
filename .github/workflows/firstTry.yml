@@ -3,5 +3,7 @@ on: workflow_dispatch
 jobs:
   Trial_One:
     runs-on: ubuntu-22.04
-    run: echo"Successfully run first github Actions"
+    steps:
+      - name: Printing Success message
+      run: echo"Successfully run first github Actions"
     
