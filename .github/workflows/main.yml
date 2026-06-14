@@ -1,0 +1,8 @@
+name: using the variable and secrets
+on: push
+jobs:
+  build_One:
+    runs-on: ubuntu-latest
+    steps:
+      - name : using of variables in githib actions
+        run: echo "My name is "
