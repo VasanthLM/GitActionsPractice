@@ -1,7 +1,0 @@
-name : sample Demo
-on : workflow_dispatch
-jobs: 
-  trial one :
-    steps:
-      run: echo"successfully run"
-
