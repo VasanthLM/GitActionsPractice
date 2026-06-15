@@ -1,0 +1,11 @@
+name: trying the environment variable
+on: workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using the environment variable
+        env:
+           Job: Software Engineer
+        run: echo "this is the internal environment variable ${{env.Job}}" 
+        
