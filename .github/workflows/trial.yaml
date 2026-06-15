@@ -3,9 +3,15 @@ on: workflow_dispatch
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      Grade: p1
     steps:
-      - name: using the environment variable
+      - name: using the environment variable step level 
         env:
            Job: Software Engineer
         run: echo "this is the internal environment variable ${{env.Job}}" 
+
+      - name: using the environment variable using job level 
+        run: echo "This is the environment variable job level ${{env.Grade}}"
+        
         
