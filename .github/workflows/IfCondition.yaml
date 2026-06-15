@@ -1,0 +1,10 @@
+name: If Condition Demo
+on: pull_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: using if first time 
+        run: if github.ref_name == GitActionsPractice
+              echo "This is sample usage of the if condition"
+              
