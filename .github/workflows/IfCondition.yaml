@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: using if first time 
-        if: github.ref_name == main
+        if: github.ref_name == 'main'
         run: echo "This is sample usage of the if condition"
               
